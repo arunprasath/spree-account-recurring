@@ -1,5 +1,4 @@
-<h1> WHADDUP </h1>
-
+<% if false%>
 <div class="row">
   <div class="col-md-6 col-md-offset-3" style="margin-top: 50px;">
     <div class="panel panel-default">
@@ -49,3 +48,4 @@
 <script type="text/javascript">Stripe.setPublishableKey("<%= @plan.provider.preferred_public_key %>");</script>
 <script>Spree.stripePaymentMethod = $('#plan_' + <%= @plan.id %> + '_subscribe')</script>
 <%= javascript_include_tag "spree/frontend/stripe" %>
+<% end %>

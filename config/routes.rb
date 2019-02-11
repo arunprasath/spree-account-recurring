@@ -13,6 +13,6 @@ Spree::Core::Engine.routes.draw do
   end
 
   resources :plans, only: :index, controller: :plans do
-    resources :subscription_plans, only: [:show, :create, :destroy, :new]
+    resources :subscription_plans, only: [:show, :create, :destroy, :new, :edit, :update]
   end
 end

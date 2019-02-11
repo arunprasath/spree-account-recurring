@@ -19,6 +19,13 @@ module Spree
       end
     end
 
+    def edit
+      binding.pry
+    end
+
+    def update
+    end
+
     def destroy
       if @subscription.save_and_manage_api(unsubscribed_at: Time.current)
         redirect_to plans_path, notice: "Subscription has been cancelled."

@@ -1,4 +1,4 @@
-class ColeController < ApplicationController
+class ColeController
   def sayHi
     puts "hi"
   end

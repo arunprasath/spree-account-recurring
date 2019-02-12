@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'stripe_tester'
 
   s.add_development_dependency 'rspec-rails',  '~> 3.4'
+  s.add_development_dependency 'pry-byebug'
 end

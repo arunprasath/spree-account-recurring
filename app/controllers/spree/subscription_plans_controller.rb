@@ -7,6 +7,7 @@ module Spree
     before_action :authenticate_subscription, only: [:new, :create]
 
     def new
+      binding.pry
       @subscription = @plan.subscription_plans.build
     end
 
@@ -17,13 +18,6 @@ module Spree
       else
         render :new
       end
-    end
-
-    def edit
-      binding.pry
-    end
-
-    def update
     end
 
     def destroy
